@@ -1,1 +1,21 @@
+* ```````````````````````````````````````````
+   ` Auther Name : ZILL-E-ALI;               `
+   `TITLE PROJECT:  Reading Dipswitch/ display;     `
+   ` Date Created : January 21 , 2022.      `
+   ````````````````````````````````````````````*/
+/*|---------------------------------------------------------------------------------------------------|
+  |     Description: This Program reads data from port 3 and then writes it to Port2.                 |
+  |                                                                                                   |
+  |-------------------------------------------------------------------------------------------------- |*/
+      
+      #include <reg51.h>  //Call The Library
+        void main()
+        {
+           int hold;
+            for(;;)
+          {
+             hold = P3; //reading from port 3.
+             P2 = hold; //writing to port 2.
+           }
 
+      }
